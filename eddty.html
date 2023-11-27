@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="styes.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>foot ball</h1>
+    </header>
+
+    <nav>
+        <label class="logo">
+           <img src="images/logo.jpg" alt="Your Logo">
+        </label>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+</nav>
+<section id="home">
+    <h2>Welcome to my world of footbal talent<br><br>
+        <img src="images/ball 1.jpg" >
+    </h2>
+    <p>This is leading to all my experence in football.<br>
+    Live for your lastest happiness and joy in footbal experiences.</p>
+</section>
+
+<section id="about">
+    <h2>ABOUT ME<br><br>
+        <img src="images/shinnah.jpg" >
+    </h2>
+    <p>Learn more about my background, skills, and interests.<br>
+        Iam Gulya Edrine talented in football with also skills of web development and also compute maintenance.</p>
+</section>
+<section id="projects">
+    <b>
+    <h2>PROCJECTS</h2>
+    </b>
+    <input type="text" id="myprojects" onkeyup="myFunction()" placeholder="Search for my Projects..">
+   <ul id="myUL">
+  <li><a href="#">Training under 15</a></li>
+  <li><a href="#">moviting  youngerones </a></li>
+  <li><a href="#">web design</a></li>
+  <li><a href="#">teaching</a></li>
+  <li><a href="#">a guide to youngerones</a></li>
+</ul>
+</section>
+<section id="blog">
+   <b>
+    <h2>BLOG</h2>
+   </b>
+    <p>Reach out to me for collaborations or inquiries.<br>Lastest updates  are about training .<br>
+         Bringing up and gromming up coming players below 18years.<br>
+        Constructing new stadiums and seeking for surport from other countries.</p>
+</section>
+<section id="contact">
+   <div class="contact-section">
+    <h2>CONTACT US</h2>
+    <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+<h1>CONTACT US DIRECTLY</h1>
+<a href="tel:256703419782">Office  manager</a><br>
+<a href="edrinemoon@gmal.com">manager's email</a>
+</section>
+<fieldset>
+<legend>Pick your date of submition</legend>
+			<label for="my-pick-date">Date:
+					<input id="my-pick-date" type="date"
+							min="24-11-2023"list="my-special-dates"
+								max="26-01-2024" name=""value=">
+								datalist id="my-special-dates"class">
+								<option value="27-11-2023"></option>
+								</datalist>
+							</label>
+			</fieldset>
+<section id="skills">
+    <h2>WHHAT PEOPLE SAY</h2>
+    <p>Discover the skills I possess and am passionate about.<br>
+        Nsamba: At i never execpted this but your team is real massive.<br>
+        Kalanja: How can i join.<br>
+        Jaon:   But is this for real hehehhe you guys you are just goood!!!
+    </p>
+</section>
+<h1>A chart showing my sporting activities</h1>
+			  <canvas id="myChart" style="width:100%;max-width:700px"></canvas
+<section class=" footer_section ">
+    <div class="social_box">
+      <a href="https://maps.gooogle.com"><img src="images/g.png" height="40px" width="70px"></a>
+     <a href="http://www.facebook.com"><img src="images/fb.jpg" height="40px" width="70px"></a>
+     <a href="http://www.whatsapp.com"><img src="images/wp.jpg" height="40px" width="70px"></a> 
+     <a href="http://www.tiktok.com"><img src="images/tk.jpg" height="40px" width="70px"></a>
+    </div>
+  </section> 
+  <script>
+    var xyValues = [
+  {x:50, y:7},
+  {x:60, y:8},
+  {x:70, y:8},
+  {x:80, y:9},
+  {x:90, y:9},
+  {x:100, y:9},
+  {x:110, y:10},
+  {x:120, y:11},
+  {x:130, y:14},
+  {x:140, y:14},
+  {x:150, y:15}
+];
+
+new Chart("myChart", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: xyValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 40, max:160}}],
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+var id = null;
+  </script> 
+</body>
+</html>
